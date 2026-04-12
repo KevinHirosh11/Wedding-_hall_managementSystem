@@ -95,6 +95,7 @@
             this.button2.TabIndex = 49;
             this.button2.Text = "Delete Customer";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -109,6 +110,7 @@
             this.button1.TabIndex = 48;
             this.button1.Text = "Edit Customer";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CustomerDGV
             // 
@@ -138,6 +140,7 @@
             this.button3.TabIndex = 46;
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label5
             // 
@@ -230,6 +233,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(56, 317);
             this.dataGridView1.Name = "dataGridView1";
@@ -237,11 +241,13 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1208, 360);
             this.dataGridView1.TabIndex = 50;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1315, 769);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
@@ -261,6 +267,7 @@
             this.Name = "Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.Customer_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

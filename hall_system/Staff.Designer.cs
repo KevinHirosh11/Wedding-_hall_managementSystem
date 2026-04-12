@@ -31,23 +31,23 @@
             this.label17 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.StaffName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.StaffPhone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.StaffGender = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.StaffPassTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.StaffDGV = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StaffDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label17
@@ -84,14 +84,14 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Staff";
             // 
-            // textBox1
+            // StaffName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox1.Location = new System.Drawing.Point(103, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 34);
-            this.textBox1.TabIndex = 12;
+            this.StaffName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StaffName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.StaffName.Location = new System.Drawing.Point(103, 110);
+            this.StaffName.Name = "StaffName";
+            this.StaffName.Size = new System.Drawing.Size(228, 34);
+            this.StaffName.TabIndex = 12;
             // 
             // label3
             // 
@@ -105,14 +105,14 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Name";
             // 
-            // textBox2
+            // StaffPhone
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox2.Location = new System.Drawing.Point(429, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 34);
-            this.textBox2.TabIndex = 14;
+            this.StaffPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StaffPhone.ForeColor = System.Drawing.Color.DarkGreen;
+            this.StaffPhone.Location = new System.Drawing.Point(429, 111);
+            this.StaffPhone.Name = "StaffPhone";
+            this.StaffPhone.Size = new System.Drawing.Size(233, 34);
+            this.StaffPhone.TabIndex = 14;
             // 
             // label1
             // 
@@ -126,18 +126,18 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Phone";
             // 
-            // comboBox1
+            // StaffGender
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Forte", 16.2F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.StaffGender.Font = new System.Drawing.Font("Forte", 16.2F);
+            this.StaffGender.FormattingEnabled = true;
+            this.StaffGender.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(769, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(163, 38);
-            this.comboBox1.TabIndex = 16;
+            this.StaffGender.Location = new System.Drawing.Point(769, 111);
+            this.StaffGender.Name = "StaffGender";
+            this.StaffGender.Size = new System.Drawing.Size(163, 38);
+            this.StaffGender.TabIndex = 16;
             // 
             // label2
             // 
@@ -151,14 +151,14 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Gender";
             // 
-            // textBox3
+            // StaffPassTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox3.Location = new System.Drawing.Point(1088, 110);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(206, 34);
-            this.textBox3.TabIndex = 18;
+            this.StaffPassTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StaffPassTb.ForeColor = System.Drawing.Color.DarkGreen;
+            this.StaffPassTb.Location = new System.Drawing.Point(1088, 110);
+            this.StaffPassTb.Name = "StaffPassTb";
+            this.StaffPassTb.Size = new System.Drawing.Size(206, 34);
+            this.StaffPassTb.TabIndex = 18;
             // 
             // label4
             // 
@@ -184,15 +184,15 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Booking List";
             // 
-            // dataGridView1
+            // StaffDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 326);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1208, 360);
-            this.dataGridView1.TabIndex = 31;
+            this.StaffDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StaffDGV.Location = new System.Drawing.Point(50, 326);
+            this.StaffDGV.Name = "StaffDGV";
+            this.StaffDGV.RowHeadersWidth = 51;
+            this.StaffDGV.RowTemplate.Height = 24;
+            this.StaffDGV.Size = new System.Drawing.Size(1208, 360);
+            this.StaffDGV.TabIndex = 31;
             // 
             // button4
             // 
@@ -207,6 +207,7 @@
             this.button4.TabIndex = 34;
             this.button4.Text = "Add Staff";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -275,23 +276,24 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.StaffDGV);
+            this.Controls.Add(this.StaffPassTb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.StaffGender);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.StaffPhone);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.StaffName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Staff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff";
+            this.Load += new System.EventHandler(this.Staff_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StaffDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,16 +304,16 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox StaffName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox StaffPhone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox StaffGender;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox StaffPassTb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView StaffDGV;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;

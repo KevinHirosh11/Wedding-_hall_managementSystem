@@ -86,7 +86,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 43);
             this.button3.TabIndex = 9;
-            this.button3.Text = "LOGIN";
+            this.button3.Text = "ViewBook";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button4

@@ -55,7 +55,15 @@ namespace hall_system
             StaffDGV.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             StaffDGV.RowHeadersVisible = false;
         }
-
+         int Staffkey = 0;
+                private void clear()
+                {
+                    StaffName.Text = "";
+                    StaffPhone.Text = "";
+                    Staffkey = 0;
+                    StaffGender.SelectedIndex = -1;
+                    StaffPassTb.Text = "";
+                }
         private void button4_Click(object sender, EventArgs e)
         {
             if (StaffName.Text == "" || StaffPhone.Text == "" || StaffGender.SelectedIndex == -1)
@@ -66,6 +74,10 @@ namespace hall_system
             {
                 try
                 {
+                    if (Con.State == ConnectionState.Open)
+                    {
+                        Con.Close();
+                    }
                     Con.Open();
                     string query = "insert into SatffTbl (StaffName, StaffPhone, StaffGender, StaffPassword) values (@Name, @Phone, @Gender, @Password)";
                     SqlCommand cmd = new SqlCommand(query, Con);
@@ -78,15 +90,19 @@ namespace hall_system
                     MessageBox.Show("Staff Successfully Added");
                     Con.Close();
                     populate();
-                    //clear();
+                    clear();
                 }
                 catch (Exception Ex)
                 {
+                    if (Con.State == ConnectionState.Open)
+                    {
+                        Con.Close();
+                    }
                     MessageBox.Show(Ex.Message);
                 }
             }
         }
-
+       
         private void Staff_Load(object sender, EventArgs e)
         {
             try 
@@ -110,5 +126,101 @@ namespace hall_system
             populate();
             StyleDataGridView();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (StaffDGV.SelectedRows.Count > 0)
+            {
+                Staffkey = Convert.ToInt32(StaffDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+
+            if (Staffkey == 0)
+            {
+                MessageBox.Show("Select The Staff Member To Be Deleted");
+
+            }
+            else
+            {
+                try
+                {
+                    if (Con.State == ConnectionState.Open)
+                    {
+                        Con.Close();
+                    }
+                    Con.Open();
+                    string query = "Delete from SatffTbl where StaffId=" + Staffkey + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Staff Deleted Successfully ");
+                    Con.Close();
+                    populate();
+                    clear();
+                }
+                catch (Exception Ex)
+                {
+                    if (Con.State == ConnectionState.Open)
+                    {
+                        Con.Close();
+                    }
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void StaffDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            StaffName.Text = StaffDGV.SelectedRows[0].Cells[1].Value.ToString();
+            StaffPhone.Text = StaffDGV.SelectedRows[0].Cells[2].Value.ToString();
+            StaffGender.SelectedItem = StaffDGV.SelectedRows[0].Cells[3].Value.ToString();
+            StaffPassTb.Text = StaffDGV.SelectedRows[0].Cells[4].Value.ToString();
+            if (StaffPhone.Text == "")
+            {
+                Staffkey = 0;
+            }
+            else
+            {
+                Staffkey = Convert.ToInt32(StaffDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (StaffName.Text == "" || StaffPhone.Text == "" || StaffGender.SelectedItem == null || StaffPassTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    if (Con.State == ConnectionState.Open)
+                    {
+                        Con.Close();
+                    }
+                    Con.Open();
+                    string query = "update SatffTbl set StaffName='" + StaffName.Text + "',StaffPhone='" + StaffPhone.Text + "',StaffGender='" + StaffGender.SelectedItem.ToString() + "',StaffPassword='" + StaffPassTb.Text + "' where StaffId=" + Staffkey + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Staff Successfully Updated");
+                    Con.Close();
+                    populate();
+                    clear();
+                }
+                catch (Exception Ex)
+                {
+                    if (Con.State == ConnectionState.Open)
+                    {
+                        Con.Close();
+                    }
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
+

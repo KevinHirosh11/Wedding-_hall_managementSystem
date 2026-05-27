@@ -16,7 +16,7 @@ namespace hall_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Staff());
+            Application.Run(new Booking());
         }
     }
 }

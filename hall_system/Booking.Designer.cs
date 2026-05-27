@@ -38,45 +38,45 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.BevCostLbl = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.juiceqty = new System.Windows.Forms.TextBox();
+            this.juicepri = new System.Windows.Forms.TextBox();
+            this.Whiskyqty = new System.Windows.Forms.TextBox();
+            this.Whiskypri = new System.Windows.Forms.TextBox();
+            this.WIneqty = new System.Windows.Forms.TextBox();
+            this.WInepri = new System.Windows.Forms.TextBox();
+            this.SodaQun = new System.Windows.Forms.TextBox();
+            this.SodaPri = new System.Windows.Forms.TextBox();
+            this.beerQty = new System.Windows.Forms.TextBox();
+            this.beerPri = new System.Windows.Forms.TextBox();
+            this.juicechk = new System.Windows.Forms.CheckBox();
+            this.Whiskychk = new System.Windows.Forms.CheckBox();
+            this.Winechk = new System.Windows.Forms.CheckBox();
+            this.SodaCheck = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.foodCos = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.mottonqty = new System.Windows.Forms.TextBox();
+            this.mottonpri = new System.Windows.Forms.TextBox();
+            this.biryaniqty = new System.Windows.Forms.TextBox();
+            this.biryanipri = new System.Windows.Forms.TextBox();
+            this.sausageqty = new System.Windows.Forms.TextBox();
+            this.sausagepri = new System.Windows.Forms.TextBox();
+            this.fishqty = new System.Windows.Forms.TextBox();
+            this.fishpri = new System.Windows.Forms.TextBox();
+            this.chickenqty = new System.Windows.Forms.TextBox();
+            this.chickenpri = new System.Windows.Forms.TextBox();
+            this.mottonchk = new System.Windows.Forms.CheckBox();
+            this.biryanichk = new System.Windows.Forms.CheckBox();
+            this.sausagechk = new System.Windows.Forms.CheckBox();
+            this.fishchk = new System.Windows.Forms.CheckBox();
+            this.chickenchk = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -88,6 +88,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -199,24 +201,25 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.BevCostLbl);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.juiceqty);
+            this.groupBox1.Controls.Add(this.juicepri);
+            this.groupBox1.Controls.Add(this.Whiskyqty);
+            this.groupBox1.Controls.Add(this.Whiskypri);
+            this.groupBox1.Controls.Add(this.WIneqty);
+            this.groupBox1.Controls.Add(this.WInepri);
+            this.groupBox1.Controls.Add(this.SodaQun);
+            this.groupBox1.Controls.Add(this.SodaPri);
+            this.groupBox1.Controls.Add(this.beerQty);
+            this.groupBox1.Controls.Add(this.beerPri);
+            this.groupBox1.Controls.Add(this.juicechk);
+            this.groupBox1.Controls.Add(this.Whiskychk);
+            this.groupBox1.Controls.Add(this.Winechk);
+            this.groupBox1.Controls.Add(this.SodaCheck);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DarkGreen;
@@ -227,17 +230,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Beverage";
             // 
-            // label8
+            // BevCostLbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Crimson;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label8.Location = new System.Drawing.Point(155, 356);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 31);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "DrinkCost";
+            this.BevCostLbl.AutoSize = true;
+            this.BevCostLbl.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BevCostLbl.ForeColor = System.Drawing.Color.Crimson;
+            this.BevCostLbl.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BevCostLbl.Location = new System.Drawing.Point(217, 356);
+            this.BevCostLbl.Name = "BevCostLbl";
+            this.BevCostLbl.Size = new System.Drawing.Size(132, 31);
+            this.BevCostLbl.TabIndex = 24;
+            this.BevCostLbl.Text = "DrinkCost";
             // 
             // label7
             // 
@@ -278,144 +281,168 @@
             this.label4.Text = "Item";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox10
+            // juiceqty
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox10.Location = new System.Drawing.Point(279, 296);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 30);
-            this.textBox10.TabIndex = 21;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            this.juiceqty.Enabled = false;
+            this.juiceqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.juiceqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.juiceqty.Location = new System.Drawing.Point(279, 296);
+            this.juiceqty.Name = "juiceqty";
+            this.juiceqty.Size = new System.Drawing.Size(100, 30);
+            this.juiceqty.TabIndex = 21;
+            this.juiceqty.Text = "0";
+            this.juiceqty.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
-            // textBox11
+            // juicepri
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox11.Location = new System.Drawing.Point(173, 296);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 30);
-            this.textBox11.TabIndex = 20;
+            this.juicepri.Enabled = false;
+            this.juicepri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.juicepri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.juicepri.Location = new System.Drawing.Point(173, 296);
+            this.juicepri.Name = "juicepri";
+            this.juicepri.Size = new System.Drawing.Size(100, 30);
+            this.juicepri.TabIndex = 20;
+            this.juicepri.Text = "0";
             // 
-            // textBox8
+            // Whiskyqty
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox8.Location = new System.Drawing.Point(279, 255);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 30);
-            this.textBox8.TabIndex = 19;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.Whiskyqty.Enabled = false;
+            this.Whiskyqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Whiskyqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Whiskyqty.Location = new System.Drawing.Point(279, 255);
+            this.Whiskyqty.Name = "Whiskyqty";
+            this.Whiskyqty.Size = new System.Drawing.Size(100, 30);
+            this.Whiskyqty.TabIndex = 19;
+            this.Whiskyqty.Text = "0";
+            this.Whiskyqty.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // textBox9
+            // Whiskypri
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox9.Location = new System.Drawing.Point(173, 255);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 30);
-            this.textBox9.TabIndex = 18;
+            this.Whiskypri.Enabled = false;
+            this.Whiskypri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Whiskypri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Whiskypri.Location = new System.Drawing.Point(173, 255);
+            this.Whiskypri.Name = "Whiskypri";
+            this.Whiskypri.Size = new System.Drawing.Size(100, 30);
+            this.Whiskypri.TabIndex = 18;
+            this.Whiskypri.Text = "0";
             // 
-            // textBox6
+            // WIneqty
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox6.Location = new System.Drawing.Point(279, 214);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 30);
-            this.textBox6.TabIndex = 17;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.WIneqty.Enabled = false;
+            this.WIneqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WIneqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.WIneqty.Location = new System.Drawing.Point(279, 214);
+            this.WIneqty.Name = "WIneqty";
+            this.WIneqty.Size = new System.Drawing.Size(100, 30);
+            this.WIneqty.TabIndex = 17;
+            this.WIneqty.Text = "0";
+            this.WIneqty.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // textBox7
+            // WInepri
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox7.Location = new System.Drawing.Point(173, 214);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 30);
-            this.textBox7.TabIndex = 16;
+            this.WInepri.Enabled = false;
+            this.WInepri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WInepri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.WInepri.Location = new System.Drawing.Point(173, 214);
+            this.WInepri.Name = "WInepri";
+            this.WInepri.Size = new System.Drawing.Size(100, 30);
+            this.WInepri.TabIndex = 16;
+            this.WInepri.Text = "0";
             // 
-            // textBox4
+            // SodaQun
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox4.Location = new System.Drawing.Point(279, 173);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 30);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.SodaQun.Enabled = false;
+            this.SodaQun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SodaQun.ForeColor = System.Drawing.Color.DarkGreen;
+            this.SodaQun.Location = new System.Drawing.Point(279, 173);
+            this.SodaQun.Name = "SodaQun";
+            this.SodaQun.Size = new System.Drawing.Size(100, 30);
+            this.SodaQun.TabIndex = 15;
+            this.SodaQun.Text = "0";
+            this.SodaQun.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox5
+            // SodaPri
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox5.Location = new System.Drawing.Point(173, 173);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 30);
-            this.textBox5.TabIndex = 14;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.SodaPri.Enabled = false;
+            this.SodaPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SodaPri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.SodaPri.Location = new System.Drawing.Point(173, 173);
+            this.SodaPri.Name = "SodaPri";
+            this.SodaPri.Size = new System.Drawing.Size(100, 30);
+            this.SodaPri.TabIndex = 14;
+            this.SodaPri.Text = "0";
+            this.SodaPri.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox3
+            // beerQty
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox3.Location = new System.Drawing.Point(279, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 30);
-            this.textBox3.TabIndex = 13;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.beerQty.Enabled = false;
+            this.beerQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beerQty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.beerQty.Location = new System.Drawing.Point(279, 129);
+            this.beerQty.Name = "beerQty";
+            this.beerQty.Size = new System.Drawing.Size(100, 30);
+            this.beerQty.TabIndex = 13;
+            this.beerQty.Text = "0";
+            this.beerQty.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // beerPri
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox2.Location = new System.Drawing.Point(173, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 30);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.beerPri.Enabled = false;
+            this.beerPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beerPri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.beerPri.Location = new System.Drawing.Point(173, 129);
+            this.beerPri.Name = "beerPri";
+            this.beerPri.Size = new System.Drawing.Size(100, 30);
+            this.beerPri.TabIndex = 12;
+            this.beerPri.Text = "0";
+            this.beerPri.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // checkBox5
+            // juicechk
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(50, 291);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(96, 35);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Juice";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.juicechk.AutoSize = true;
+            this.juicechk.Location = new System.Drawing.Point(50, 291);
+            this.juicechk.Name = "juicechk";
+            this.juicechk.Size = new System.Drawing.Size(96, 35);
+            this.juicechk.TabIndex = 4;
+            this.juicechk.Text = "Juice";
+            this.juicechk.UseVisualStyleBackColor = true;
+            this.juicechk.CheckStateChanged += new System.EventHandler(this.juicechk_CheckStateChanged);
             // 
-            // checkBox4
+            // Whiskychk
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(50, 250);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(121, 35);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Whisky";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.Whiskychk.AutoSize = true;
+            this.Whiskychk.Location = new System.Drawing.Point(50, 250);
+            this.Whiskychk.Name = "Whiskychk";
+            this.Whiskychk.Size = new System.Drawing.Size(121, 35);
+            this.Whiskychk.TabIndex = 3;
+            this.Whiskychk.Text = "Whisky";
+            this.Whiskychk.UseVisualStyleBackColor = true;
+            this.Whiskychk.CheckStateChanged += new System.EventHandler(this.Whiskychk_CheckStateChanged);
             // 
-            // checkBox3
+            // Winechk
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(50, 209);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(92, 35);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Wine";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.Winechk.AutoSize = true;
+            this.Winechk.Location = new System.Drawing.Point(50, 209);
+            this.Winechk.Name = "Winechk";
+            this.Winechk.Size = new System.Drawing.Size(92, 35);
+            this.Winechk.TabIndex = 2;
+            this.Winechk.Text = "Wine";
+            this.Winechk.UseVisualStyleBackColor = true;
+            this.Winechk.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.Winechk.CheckStateChanged += new System.EventHandler(this.Winechk_CheckStateChanged);
             // 
-            // checkBox2
+            // SodaCheck
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(50, 168);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(96, 35);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Soda";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.SodaCheck.AutoSize = true;
+            this.SodaCheck.Location = new System.Drawing.Point(50, 168);
+            this.SodaCheck.Name = "SodaCheck";
+            this.SodaCheck.Size = new System.Drawing.Size(96, 35);
+            this.SodaCheck.TabIndex = 1;
+            this.SodaCheck.Text = "Soda";
+            this.SodaCheck.UseVisualStyleBackColor = true;
+            this.SodaCheck.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.SodaCheck.CheckStateChanged += new System.EventHandler(this.SodaCheck_CheckStateChanged);
             // 
             // checkBox1
             // 
@@ -427,28 +454,30 @@
             this.checkBox1.Text = "Beer";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.foodCos);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.textBox15);
-            this.groupBox2.Controls.Add(this.textBox16);
-            this.groupBox2.Controls.Add(this.textBox17);
-            this.groupBox2.Controls.Add(this.textBox18);
-            this.groupBox2.Controls.Add(this.textBox19);
-            this.groupBox2.Controls.Add(this.textBox20);
-            this.groupBox2.Controls.Add(this.textBox21);
-            this.groupBox2.Controls.Add(this.checkBox6);
-            this.groupBox2.Controls.Add(this.checkBox7);
-            this.groupBox2.Controls.Add(this.checkBox8);
-            this.groupBox2.Controls.Add(this.checkBox9);
-            this.groupBox2.Controls.Add(this.checkBox10);
+            this.groupBox2.Controls.Add(this.mottonqty);
+            this.groupBox2.Controls.Add(this.mottonpri);
+            this.groupBox2.Controls.Add(this.biryaniqty);
+            this.groupBox2.Controls.Add(this.biryanipri);
+            this.groupBox2.Controls.Add(this.sausageqty);
+            this.groupBox2.Controls.Add(this.sausagepri);
+            this.groupBox2.Controls.Add(this.fishqty);
+            this.groupBox2.Controls.Add(this.fishpri);
+            this.groupBox2.Controls.Add(this.chickenqty);
+            this.groupBox2.Controls.Add(this.chickenpri);
+            this.groupBox2.Controls.Add(this.mottonchk);
+            this.groupBox2.Controls.Add(this.biryanichk);
+            this.groupBox2.Controls.Add(this.sausagechk);
+            this.groupBox2.Controls.Add(this.fishchk);
+            this.groupBox2.Controls.Add(this.chickenchk);
             this.groupBox2.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkGreen;
             this.groupBox2.Location = new System.Drawing.Point(739, 158);
@@ -459,17 +488,17 @@
             this.groupBox2.Text = "Dishes";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // label9
+            // foodCos
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Crimson;
-            this.label9.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label9.Location = new System.Drawing.Point(155, 356);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 31);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "FoodCost";
+            this.foodCos.AutoSize = true;
+            this.foodCos.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodCos.ForeColor = System.Drawing.Color.Crimson;
+            this.foodCos.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.foodCos.Location = new System.Drawing.Point(244, 356);
+            this.foodCos.Name = "foodCos";
+            this.foodCos.Size = new System.Drawing.Size(129, 31);
+            this.foodCos.TabIndex = 24;
+            this.foodCos.Text = "FoodCost";
             // 
             // label10
             // 
@@ -507,145 +536,170 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Item";
             // 
-            // textBox12
+            // mottonqty
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox12.Location = new System.Drawing.Point(299, 296);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 30);
-            this.textBox12.TabIndex = 21;
+            this.mottonqty.Enabled = false;
+            this.mottonqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mottonqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.mottonqty.Location = new System.Drawing.Point(299, 296);
+            this.mottonqty.Name = "mottonqty";
+            this.mottonqty.Size = new System.Drawing.Size(100, 30);
+            this.mottonqty.TabIndex = 21;
+            this.mottonqty.Text = "0";
             // 
-            // textBox13
+            // mottonpri
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox13.Location = new System.Drawing.Point(193, 296);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 30);
-            this.textBox13.TabIndex = 20;
+            this.mottonpri.Enabled = false;
+            this.mottonpri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mottonpri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.mottonpri.Location = new System.Drawing.Point(193, 296);
+            this.mottonpri.Name = "mottonpri";
+            this.mottonpri.Size = new System.Drawing.Size(100, 30);
+            this.mottonpri.TabIndex = 20;
+            this.mottonpri.Text = "0";
             // 
-            // textBox14
+            // biryaniqty
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox14.Location = new System.Drawing.Point(299, 255);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 30);
-            this.textBox14.TabIndex = 19;
+            this.biryaniqty.Enabled = false;
+            this.biryaniqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.biryaniqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.biryaniqty.Location = new System.Drawing.Point(299, 255);
+            this.biryaniqty.Name = "biryaniqty";
+            this.biryaniqty.Size = new System.Drawing.Size(100, 30);
+            this.biryaniqty.TabIndex = 19;
+            this.biryaniqty.Text = "0";
             // 
-            // textBox15
+            // biryanipri
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox15.Location = new System.Drawing.Point(193, 255);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 30);
-            this.textBox15.TabIndex = 18;
+            this.biryanipri.Enabled = false;
+            this.biryanipri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.biryanipri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.biryanipri.Location = new System.Drawing.Point(193, 255);
+            this.biryanipri.Name = "biryanipri";
+            this.biryanipri.Size = new System.Drawing.Size(100, 30);
+            this.biryanipri.TabIndex = 18;
+            this.biryanipri.Text = "0";
             // 
-            // textBox16
+            // sausageqty
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox16.Location = new System.Drawing.Point(299, 214);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 30);
-            this.textBox16.TabIndex = 17;
+            this.sausageqty.Enabled = false;
+            this.sausageqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sausageqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.sausageqty.Location = new System.Drawing.Point(299, 214);
+            this.sausageqty.Name = "sausageqty";
+            this.sausageqty.Size = new System.Drawing.Size(100, 30);
+            this.sausageqty.TabIndex = 17;
+            this.sausageqty.Text = "0";
             // 
-            // textBox17
+            // sausagepri
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox17.Location = new System.Drawing.Point(193, 214);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 30);
-            this.textBox17.TabIndex = 16;
+            this.sausagepri.Enabled = false;
+            this.sausagepri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sausagepri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.sausagepri.Location = new System.Drawing.Point(193, 214);
+            this.sausagepri.Name = "sausagepri";
+            this.sausagepri.Size = new System.Drawing.Size(100, 30);
+            this.sausagepri.TabIndex = 16;
+            this.sausagepri.Text = "0";
             // 
-            // textBox18
+            // fishqty
             // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox18.Location = new System.Drawing.Point(299, 173);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 30);
-            this.textBox18.TabIndex = 15;
+            this.fishqty.Enabled = false;
+            this.fishqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fishqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.fishqty.Location = new System.Drawing.Point(299, 173);
+            this.fishqty.Name = "fishqty";
+            this.fishqty.Size = new System.Drawing.Size(100, 30);
+            this.fishqty.TabIndex = 15;
+            this.fishqty.Text = "0";
             // 
-            // textBox19
+            // fishpri
             // 
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox19.Location = new System.Drawing.Point(193, 173);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 30);
-            this.textBox19.TabIndex = 14;
+            this.fishpri.Enabled = false;
+            this.fishpri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fishpri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.fishpri.Location = new System.Drawing.Point(193, 173);
+            this.fishpri.Name = "fishpri";
+            this.fishpri.Size = new System.Drawing.Size(100, 30);
+            this.fishpri.TabIndex = 14;
+            this.fishpri.Text = "0";
             // 
-            // textBox20
+            // chickenqty
             // 
-            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox20.Location = new System.Drawing.Point(299, 129);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 30);
-            this.textBox20.TabIndex = 13;
+            this.chickenqty.Enabled = false;
+            this.chickenqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chickenqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chickenqty.Location = new System.Drawing.Point(299, 129);
+            this.chickenqty.Name = "chickenqty";
+            this.chickenqty.Size = new System.Drawing.Size(100, 30);
+            this.chickenqty.TabIndex = 13;
+            this.chickenqty.Text = "0";
             // 
-            // textBox21
+            // chickenpri
             // 
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox21.Location = new System.Drawing.Point(193, 129);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 30);
-            this.textBox21.TabIndex = 12;
+            this.chickenpri.Enabled = false;
+            this.chickenpri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chickenpri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chickenpri.Location = new System.Drawing.Point(193, 129);
+            this.chickenpri.Name = "chickenpri";
+            this.chickenpri.Size = new System.Drawing.Size(100, 30);
+            this.chickenpri.TabIndex = 12;
+            this.chickenpri.Text = "0";
             // 
-            // checkBox6
+            // mottonchk
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(50, 291);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(130, 35);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "Motton";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.mottonchk.AutoSize = true;
+            this.mottonchk.Location = new System.Drawing.Point(50, 291);
+            this.mottonchk.Name = "mottonchk";
+            this.mottonchk.Size = new System.Drawing.Size(130, 35);
+            this.mottonchk.TabIndex = 4;
+            this.mottonchk.Text = "Motton";
+            this.mottonchk.UseVisualStyleBackColor = true;
+            this.mottonchk.CheckStateChanged += new System.EventHandler(this.mottonchk_CheckStateChanged);
             // 
-            // checkBox7
+            // biryanichk
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(50, 250);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(120, 35);
-            this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "Biryani";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.biryanichk.AutoSize = true;
+            this.biryanichk.Location = new System.Drawing.Point(50, 250);
+            this.biryanichk.Name = "biryanichk";
+            this.biryanichk.Size = new System.Drawing.Size(120, 35);
+            this.biryanichk.TabIndex = 3;
+            this.biryanichk.Text = "Biryani";
+            this.biryanichk.UseVisualStyleBackColor = true;
+            this.biryanichk.CheckStateChanged += new System.EventHandler(this.biryanichk_CheckStateChanged);
             // 
-            // checkBox8
+            // sausagechk
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(50, 209);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(135, 35);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "Sausage";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.sausagechk.AutoSize = true;
+            this.sausagechk.Location = new System.Drawing.Point(50, 209);
+            this.sausagechk.Name = "sausagechk";
+            this.sausagechk.Size = new System.Drawing.Size(135, 35);
+            this.sausagechk.TabIndex = 2;
+            this.sausagechk.Text = "Sausage";
+            this.sausagechk.UseVisualStyleBackColor = true;
+            this.sausagechk.CheckStateChanged += new System.EventHandler(this.sausagechk_CheckStateChanged);
             // 
-            // checkBox9
+            // fishchk
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(50, 168);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(84, 35);
-            this.checkBox9.TabIndex = 1;
-            this.checkBox9.Text = "Fish";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.fishchk.AutoSize = true;
+            this.fishchk.Location = new System.Drawing.Point(50, 168);
+            this.fishchk.Name = "fishchk";
+            this.fishchk.Size = new System.Drawing.Size(84, 35);
+            this.fishchk.TabIndex = 1;
+            this.fishchk.Text = "Fish";
+            this.fishchk.UseVisualStyleBackColor = true;
+            this.fishchk.CheckStateChanged += new System.EventHandler(this.fishchk_CheckStateChanged);
             // 
-            // checkBox10
+            // chickenchk
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(50, 127);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(125, 35);
-            this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "Chicken";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.chickenchk.AutoSize = true;
+            this.chickenchk.Location = new System.Drawing.Point(50, 127);
+            this.chickenchk.Name = "chickenchk";
+            this.chickenchk.Size = new System.Drawing.Size(125, 35);
+            this.chickenchk.TabIndex = 0;
+            this.chickenchk.Text = "Chicken";
+            this.chickenchk.UseVisualStyleBackColor = true;
+            this.chickenchk.CheckStateChanged += new System.EventHandler(this.chickenchk_CheckStateChanged);
             // 
             // groupBox3
             // 
@@ -779,6 +833,26 @@
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(65, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 40);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Click";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(86, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 40);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Click";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -826,45 +900,45 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox Whiskychk;
+        private System.Windows.Forms.CheckBox Winechk;
+        private System.Windows.Forms.CheckBox SodaCheck;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox juicechk;
+        private System.Windows.Forms.TextBox beerQty;
+        private System.Windows.Forms.TextBox beerPri;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox juiceqty;
+        private System.Windows.Forms.TextBox juicepri;
+        private System.Windows.Forms.TextBox Whiskyqty;
+        private System.Windows.Forms.TextBox Whiskypri;
+        private System.Windows.Forms.TextBox WIneqty;
+        private System.Windows.Forms.TextBox WInepri;
+        private System.Windows.Forms.TextBox SodaQun;
+        private System.Windows.Forms.TextBox SodaPri;
+        private System.Windows.Forms.Label BevCostLbl;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label foodCos;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.TextBox mottonqty;
+        private System.Windows.Forms.TextBox mottonpri;
+        private System.Windows.Forms.TextBox biryaniqty;
+        private System.Windows.Forms.TextBox biryanipri;
+        private System.Windows.Forms.TextBox sausageqty;
+        private System.Windows.Forms.TextBox sausagepri;
+        private System.Windows.Forms.TextBox fishqty;
+        private System.Windows.Forms.TextBox fishpri;
+        private System.Windows.Forms.TextBox chickenqty;
+        private System.Windows.Forms.TextBox chickenpri;
+        private System.Windows.Forms.CheckBox mottonchk;
+        private System.Windows.Forms.CheckBox biryanichk;
+        private System.Windows.Forms.CheckBox sausagechk;
+        private System.Windows.Forms.CheckBox fishchk;
+        private System.Windows.Forms.CheckBox chickenchk;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.Label label14;
@@ -877,5 +951,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

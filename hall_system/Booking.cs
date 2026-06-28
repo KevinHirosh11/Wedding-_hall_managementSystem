@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace hall_system
 {
@@ -16,10 +11,23 @@ namespace hall_system
         {
             InitializeComponent();
         }
-
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Wedding-_hall_managementSystem\hall_system\WeddingHallDB.mdf;Integrated Security=True;Connect Timeout=30");
+        private void GetCustID()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select CusID from CustomerTbl", Con);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CusID", typeof(string));
+            dt.Load(rdr);
+            CustIDcb.ValueMember = "CusID";
+            CustIDcb.DataSource = dt;
+            Con.Close();
+        }
         private void Booking_Load(object sender, EventArgs e)
         {
-
+            GetCustID();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -319,7 +327,7 @@ namespace hall_system
             int chicken = 0, Fish = 0, sausage = 0, Biryani = 0, motton = 0;
             if (chickenchk.Checked == true && chickenpri.Text == "" && chickenqty.Text == "")
             {
-                MessageBox.Show("Enter Beer Quantity");
+                MessageBox.Show("Enter Chicken Quantity");
             }
             else
             {
@@ -327,7 +335,7 @@ namespace hall_system
             }
             if (fishchk.Checked == true && fishpri.Text == "" && fishqty.Text == "")
             {
-                MessageBox.Show("Enter Beer Quantity");
+                MessageBox.Show("Enter Fish Quantity");
             }
             else
             {
@@ -335,7 +343,7 @@ namespace hall_system
             }
             if (sausagechk.Checked == true && sausagepri.Text == "" && sausageqty.Text == "")
             {
-                MessageBox.Show("Enter Beer Quantity");
+                MessageBox.Show("Enter Sausage Quantity");
             }
             else
             {
@@ -343,7 +351,7 @@ namespace hall_system
             }
             if (biryanichk.Checked == true && biryanipri.Text == "" && biryaniqty.Text == "")
             {
-                MessageBox.Show("Enter Beer Quantity");
+                MessageBox.Show("Enter Biryani Quantity");
             }
             else
             {
@@ -351,14 +359,37 @@ namespace hall_system
             }
             if (mottonchk.Checked == true && mottonpri.Text == "" && mottonqty.Text == "")
             {
-                MessageBox.Show("Enter Beer Quantity");
+                MessageBox.Show("Enter Motton Quantity");
             }
             else
             {
                 motton = Convert.ToInt32(mottonpri.Text) * Convert.ToInt32(mottonqty.Text);
             }
-            int bevcost = chicken + Fish + sausage + Biryani + motton;
-            foodCos.Text = "" + bevcost;
+            int dishcost = chicken + Fish + sausage + Biryani + motton;
+            foodCos.Text = "" + dishcost;
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void fetchcusName()
+        {
+            Con.Open();
+            string mysql = "select * from CustomerTbl where CusID=" + CustIDcb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(mysql, Con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CustName.Text = "" + dr["CusName"].ToString();
+            }
+            Con.Close();
+        }
+        private void CustIDcb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fetchcusName();
         }
     }
 }

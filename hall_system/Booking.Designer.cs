@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.BevCostLbl = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@
             this.SodaCheck = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.foodCos = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -88,8 +90,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CustomerID = new System.Windows.Forms.Label();
+            this.CustIDcb = new System.Windows.Forms.ComboBox();
+            this.CustName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -137,7 +140,7 @@
             this.label2.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label2.Location = new System.Drawing.Point(48, 83);
+            this.label2.Location = new System.Drawing.Point(30, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 31);
             this.label2.TabIndex = 5;
@@ -147,7 +150,7 @@
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(124, 73);
+            this.dateTimePicker1.Location = new System.Drawing.Point(106, 73);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dateTimePicker1.Size = new System.Drawing.Size(422, 44);
@@ -160,7 +163,7 @@
             this.label1.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label1.Location = new System.Drawing.Point(598, 83);
+            this.label1.Location = new System.Drawing.Point(574, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 31);
             this.label1.TabIndex = 7;
@@ -173,7 +176,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Day",
             "Night"});
-            this.comboBox1.Location = new System.Drawing.Point(672, 76);
+            this.comboBox1.Location = new System.Drawing.Point(648, 76);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(163, 38);
             this.comboBox1.TabIndex = 8;
@@ -184,7 +187,7 @@
             this.label3.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGreen;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label3.Location = new System.Drawing.Point(944, 83);
+            this.label3.Location = new System.Drawing.Point(863, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 31);
             this.label3.TabIndex = 9;
@@ -194,7 +197,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox1.Location = new System.Drawing.Point(1101, 80);
+            this.textBox1.Location = new System.Drawing.Point(1020, 80);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 34);
             this.textBox1.TabIndex = 10;
@@ -223,12 +226,22 @@
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.groupBox1.Location = new System.Drawing.Point(24, 158);
+            this.groupBox1.Location = new System.Drawing.Point(24, 197);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(439, 390);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Beverage";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(65, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 40);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Click";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BevCostLbl
             // 
@@ -480,13 +493,23 @@
             this.groupBox2.Controls.Add(this.chickenchk);
             this.groupBox2.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.groupBox2.Location = new System.Drawing.Point(739, 158);
+            this.groupBox2.Location = new System.Drawing.Point(739, 197);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(439, 390);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dishes";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(86, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 40);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Click";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // foodCos
             // 
@@ -833,25 +856,43 @@
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // CustomerID
             // 
-            this.button1.Location = new System.Drawing.Point(65, 344);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 40);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Click";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CustomerID.AutoSize = true;
+            this.CustomerID.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerID.ForeColor = System.Drawing.Color.DarkGreen;
+            this.CustomerID.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.CustomerID.Location = new System.Drawing.Point(360, 148);
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Size = new System.Drawing.Size(162, 31);
+            this.CustomerID.TabIndex = 28;
+            this.CustomerID.Text = "CustomerID";
+            this.CustomerID.Click += new System.EventHandler(this.label8_Click);
             // 
-            // button2
+            // CustIDcb
             // 
-            this.button2.Location = new System.Drawing.Point(86, 344);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 40);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Click";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CustIDcb.Font = new System.Drawing.Font("Forte", 16.2F);
+            this.CustIDcb.FormattingEnabled = true;
+            this.CustIDcb.Items.AddRange(new object[] {
+            "Day",
+            "Night"});
+            this.CustIDcb.Location = new System.Drawing.Point(528, 145);
+            this.CustIDcb.Name = "CustIDcb";
+            this.CustIDcb.Size = new System.Drawing.Size(163, 38);
+            this.CustIDcb.TabIndex = 29;
+            this.CustIDcb.SelectedIndexChanged += new System.EventHandler(this.CustIDcb_SelectedIndexChanged);
+            // 
+            // CustName
+            // 
+            this.CustName.AutoSize = true;
+            this.CustName.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.CustName.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.CustName.Location = new System.Drawing.Point(707, 148);
+            this.CustName.Name = "CustName";
+            this.CustName.Size = new System.Drawing.Size(140, 31);
+            this.CustName.TabIndex = 30;
+            this.CustName.Text = "CustName";
             // 
             // Booking
             // 
@@ -859,6 +900,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1279, 853);
+            this.Controls.Add(this.CustName);
+            this.Controls.Add(this.CustIDcb);
+            this.Controls.Add(this.CustomerID);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox3);
@@ -953,5 +997,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label CustomerID;
+        private System.Windows.Forms.ComboBox CustIDcb;
+        private System.Windows.Forms.Label CustName;
     }
 }

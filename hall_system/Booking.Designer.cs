@@ -40,19 +40,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.BevCostLbl = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.juiceqty = new System.Windows.Forms.TextBox();
             this.juicepri = new System.Windows.Forms.TextBox();
-            this.Whiskyqty = new System.Windows.Forms.TextBox();
             this.Whiskypri = new System.Windows.Forms.TextBox();
-            this.WIneqty = new System.Windows.Forms.TextBox();
             this.WInepri = new System.Windows.Forms.TextBox();
-            this.SodaQun = new System.Windows.Forms.TextBox();
-            this.SodaPri = new System.Windows.Forms.TextBox();
-            this.beerQty = new System.Windows.Forms.TextBox();
-            this.beerPri = new System.Windows.Forms.TextBox();
             this.juicechk = new System.Windows.Forms.CheckBox();
             this.Whiskychk = new System.Windows.Forms.CheckBox();
             this.Winechk = new System.Windows.Forms.CheckBox();
@@ -93,6 +83,16 @@
             this.CustomerID = new System.Windows.Forms.Label();
             this.CustIDcb = new System.Windows.Forms.ComboBox();
             this.CustName = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SodaPri = new System.Windows.Forms.TextBox();
+            this.beerPri = new System.Windows.Forms.TextBox();
+            this.SodaQun = new System.Windows.Forms.TextBox();
+            this.WIneqty = new System.Windows.Forms.TextBox();
+            this.Whiskyqty = new System.Windows.Forms.TextBox();
+            this.juiceqty = new System.Windows.Forms.TextBox();
+            this.beerQty = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -155,7 +155,6 @@
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dateTimePicker1.Size = new System.Drawing.Size(422, 44);
             this.dateTimePicker1.TabIndex = 6;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
@@ -204,21 +203,21 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.BevCostLbl);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.juiceqty);
-            this.groupBox1.Controls.Add(this.juicepri);
-            this.groupBox1.Controls.Add(this.Whiskyqty);
-            this.groupBox1.Controls.Add(this.Whiskypri);
-            this.groupBox1.Controls.Add(this.WIneqty);
-            this.groupBox1.Controls.Add(this.WInepri);
-            this.groupBox1.Controls.Add(this.SodaQun);
-            this.groupBox1.Controls.Add(this.SodaPri);
             this.groupBox1.Controls.Add(this.beerQty);
+            this.groupBox1.Controls.Add(this.juiceqty);
+            this.groupBox1.Controls.Add(this.Whiskyqty);
+            this.groupBox1.Controls.Add(this.WIneqty);
+            this.groupBox1.Controls.Add(this.SodaQun);
             this.groupBox1.Controls.Add(this.beerPri);
+            this.groupBox1.Controls.Add(this.SodaPri);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.BevCostLbl);
+            this.groupBox1.Controls.Add(this.juicepri);
+            this.groupBox1.Controls.Add(this.Whiskypri);
+            this.groupBox1.Controls.Add(this.WInepri);
             this.groupBox1.Controls.Add(this.juicechk);
             this.groupBox1.Controls.Add(this.Whiskychk);
             this.groupBox1.Controls.Add(this.Winechk);
@@ -255,57 +254,6 @@
             this.BevCostLbl.TabIndex = 24;
             this.BevCostLbl.Text = "DrinkCost";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Crimson;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label7.Location = new System.Drawing.Point(277, 65);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 31);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Quantity";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label5.Location = new System.Drawing.Point(179, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 31);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Price";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Crimson;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label4.Location = new System.Drawing.Point(69, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 31);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Item";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // juiceqty
-            // 
-            this.juiceqty.Enabled = false;
-            this.juiceqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juiceqty.ForeColor = System.Drawing.Color.DarkGreen;
-            this.juiceqty.Location = new System.Drawing.Point(279, 296);
-            this.juiceqty.Name = "juiceqty";
-            this.juiceqty.Size = new System.Drawing.Size(100, 30);
-            this.juiceqty.TabIndex = 21;
-            this.juiceqty.Text = "0";
-            this.juiceqty.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
-            // 
             // juicepri
             // 
             this.juicepri.Enabled = false;
@@ -316,18 +264,6 @@
             this.juicepri.Size = new System.Drawing.Size(100, 30);
             this.juicepri.TabIndex = 20;
             this.juicepri.Text = "0";
-            // 
-            // Whiskyqty
-            // 
-            this.Whiskyqty.Enabled = false;
-            this.Whiskyqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Whiskyqty.ForeColor = System.Drawing.Color.DarkGreen;
-            this.Whiskyqty.Location = new System.Drawing.Point(279, 255);
-            this.Whiskyqty.Name = "Whiskyqty";
-            this.Whiskyqty.Size = new System.Drawing.Size(100, 30);
-            this.Whiskyqty.TabIndex = 19;
-            this.Whiskyqty.Text = "0";
-            this.Whiskyqty.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // Whiskypri
             // 
@@ -340,18 +276,6 @@
             this.Whiskypri.TabIndex = 18;
             this.Whiskypri.Text = "0";
             // 
-            // WIneqty
-            // 
-            this.WIneqty.Enabled = false;
-            this.WIneqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WIneqty.ForeColor = System.Drawing.Color.DarkGreen;
-            this.WIneqty.Location = new System.Drawing.Point(279, 214);
-            this.WIneqty.Name = "WIneqty";
-            this.WIneqty.Size = new System.Drawing.Size(100, 30);
-            this.WIneqty.TabIndex = 17;
-            this.WIneqty.Text = "0";
-            this.WIneqty.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
             // WInepri
             // 
             this.WInepri.Enabled = false;
@@ -362,54 +286,6 @@
             this.WInepri.Size = new System.Drawing.Size(100, 30);
             this.WInepri.TabIndex = 16;
             this.WInepri.Text = "0";
-            // 
-            // SodaQun
-            // 
-            this.SodaQun.Enabled = false;
-            this.SodaQun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SodaQun.ForeColor = System.Drawing.Color.DarkGreen;
-            this.SodaQun.Location = new System.Drawing.Point(279, 173);
-            this.SodaQun.Name = "SodaQun";
-            this.SodaQun.Size = new System.Drawing.Size(100, 30);
-            this.SodaQun.TabIndex = 15;
-            this.SodaQun.Text = "0";
-            this.SodaQun.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // SodaPri
-            // 
-            this.SodaPri.Enabled = false;
-            this.SodaPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SodaPri.ForeColor = System.Drawing.Color.DarkGreen;
-            this.SodaPri.Location = new System.Drawing.Point(173, 173);
-            this.SodaPri.Name = "SodaPri";
-            this.SodaPri.Size = new System.Drawing.Size(100, 30);
-            this.SodaPri.TabIndex = 14;
-            this.SodaPri.Text = "0";
-            this.SodaPri.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // beerQty
-            // 
-            this.beerQty.Enabled = false;
-            this.beerQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beerQty.ForeColor = System.Drawing.Color.DarkGreen;
-            this.beerQty.Location = new System.Drawing.Point(279, 129);
-            this.beerQty.Name = "beerQty";
-            this.beerQty.Size = new System.Drawing.Size(100, 30);
-            this.beerQty.TabIndex = 13;
-            this.beerQty.Text = "0";
-            this.beerQty.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // beerPri
-            // 
-            this.beerPri.Enabled = false;
-            this.beerPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beerPri.ForeColor = System.Drawing.Color.DarkGreen;
-            this.beerPri.Location = new System.Drawing.Point(173, 129);
-            this.beerPri.Name = "beerPri";
-            this.beerPri.Size = new System.Drawing.Size(100, 30);
-            this.beerPri.TabIndex = 12;
-            this.beerPri.Text = "0";
-            this.beerPri.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // juicechk
             // 
@@ -442,7 +318,6 @@
             this.Winechk.TabIndex = 2;
             this.Winechk.Text = "Wine";
             this.Winechk.UseVisualStyleBackColor = true;
-            this.Winechk.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             this.Winechk.CheckStateChanged += new System.EventHandler(this.Winechk_CheckStateChanged);
             // 
             // SodaCheck
@@ -454,7 +329,6 @@
             this.SodaCheck.TabIndex = 1;
             this.SodaCheck.Text = "Soda";
             this.SodaCheck.UseVisualStyleBackColor = true;
-            this.SodaCheck.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             this.SodaCheck.CheckStateChanged += new System.EventHandler(this.SodaCheck_CheckStateChanged);
             // 
             // checkBox1
@@ -466,7 +340,6 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Beer";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
             // 
             // groupBox2
@@ -499,7 +372,6 @@
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dishes";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // button2
             // 
@@ -745,6 +617,7 @@
             // 
             // textBox25
             // 
+            this.textBox25.Enabled = false;
             this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox25.ForeColor = System.Drawing.Color.DarkGreen;
             this.textBox25.Location = new System.Drawing.Point(670, 102);
@@ -787,13 +660,13 @@
             // 
             // textBox23
             // 
+            this.textBox23.Enabled = false;
             this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox23.ForeColor = System.Drawing.Color.DarkGreen;
             this.textBox23.Location = new System.Drawing.Point(670, 43);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(167, 30);
             this.textBox23.TabIndex = 26;
-            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
             // 
             // label14
             // 
@@ -841,6 +714,7 @@
             this.button4.TabIndex = 27;
             this.button4.Text = "Add Booking";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -855,6 +729,7 @@
             this.button3.TabIndex = 26;
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // CustomerID
             // 
@@ -880,19 +755,132 @@
             this.CustIDcb.Name = "CustIDcb";
             this.CustIDcb.Size = new System.Drawing.Size(163, 38);
             this.CustIDcb.TabIndex = 29;
-            this.CustIDcb.SelectedIndexChanged += new System.EventHandler(this.CustIDcb_SelectedIndexChanged);
+            this.CustIDcb.SelectionChangeCommitted += new System.EventHandler(this.CustIDcb_SelectionChangeCommitted);
             // 
             // CustName
             // 
             this.CustName.AutoSize = true;
             this.CustName.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.CustName.ForeColor = System.Drawing.Color.Crimson;
             this.CustName.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.CustName.Location = new System.Drawing.Point(707, 148);
             this.CustName.Name = "CustName";
-            this.CustName.Size = new System.Drawing.Size(140, 31);
+            this.CustName.Size = new System.Drawing.Size(0, 31);
             this.CustName.TabIndex = 30;
-            this.CustName.Text = "CustName";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Crimson;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label4.Location = new System.Drawing.Point(285, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 31);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Quantity";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Crimson;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label5.Location = new System.Drawing.Point(189, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 31);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Price";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Crimson;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label7.Location = new System.Drawing.Point(63, 65);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 31);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Item";
+            // 
+            // SodaPri
+            // 
+            this.SodaPri.Enabled = false;
+            this.SodaPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SodaPri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.SodaPri.Location = new System.Drawing.Point(173, 170);
+            this.SodaPri.Name = "SodaPri";
+            this.SodaPri.Size = new System.Drawing.Size(100, 30);
+            this.SodaPri.TabIndex = 34;
+            this.SodaPri.Text = "0";
+            // 
+            // beerPri
+            // 
+            this.beerPri.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.beerPri.Enabled = false;
+            this.beerPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beerPri.ForeColor = System.Drawing.Color.DarkGreen;
+            this.beerPri.Location = new System.Drawing.Point(173, 127);
+            this.beerPri.Name = "beerPri";
+            this.beerPri.Size = new System.Drawing.Size(100, 30);
+            this.beerPri.TabIndex = 35;
+            this.beerPri.Text = "0";
+            // 
+            // SodaQun
+            // 
+            this.SodaQun.Enabled = false;
+            this.SodaQun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SodaQun.ForeColor = System.Drawing.Color.DarkGreen;
+            this.SodaQun.Location = new System.Drawing.Point(303, 168);
+            this.SodaQun.Name = "SodaQun";
+            this.SodaQun.Size = new System.Drawing.Size(100, 30);
+            this.SodaQun.TabIndex = 36;
+            this.SodaQun.Text = "0";
+            // 
+            // WIneqty
+            // 
+            this.WIneqty.Enabled = false;
+            this.WIneqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WIneqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.WIneqty.Location = new System.Drawing.Point(303, 211);
+            this.WIneqty.Name = "WIneqty";
+            this.WIneqty.Size = new System.Drawing.Size(100, 30);
+            this.WIneqty.TabIndex = 37;
+            this.WIneqty.Text = "0";
+            // 
+            // Whiskyqty
+            // 
+            this.Whiskyqty.Enabled = false;
+            this.Whiskyqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Whiskyqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Whiskyqty.Location = new System.Drawing.Point(303, 252);
+            this.Whiskyqty.Name = "Whiskyqty";
+            this.Whiskyqty.Size = new System.Drawing.Size(100, 30);
+            this.Whiskyqty.TabIndex = 38;
+            this.Whiskyqty.Text = "0";
+            // 
+            // juiceqty
+            // 
+            this.juiceqty.Enabled = false;
+            this.juiceqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.juiceqty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.juiceqty.Location = new System.Drawing.Point(303, 296);
+            this.juiceqty.Name = "juiceqty";
+            this.juiceqty.Size = new System.Drawing.Size(100, 30);
+            this.juiceqty.TabIndex = 39;
+            this.juiceqty.Text = "0";
+            // 
+            // beerQty
+            // 
+            this.beerQty.Enabled = false;
+            this.beerQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beerQty.ForeColor = System.Drawing.Color.DarkGreen;
+            this.beerQty.Location = new System.Drawing.Point(303, 127);
+            this.beerQty.Name = "beerQty";
+            this.beerQty.Size = new System.Drawing.Size(100, 30);
+            this.beerQty.TabIndex = 40;
+            this.beerQty.Text = "0";
             // 
             // Booking
             // 
@@ -949,19 +937,9 @@
         private System.Windows.Forms.CheckBox SodaCheck;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox juicechk;
-        private System.Windows.Forms.TextBox beerQty;
-        private System.Windows.Forms.TextBox beerPri;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox juiceqty;
         private System.Windows.Forms.TextBox juicepri;
-        private System.Windows.Forms.TextBox Whiskyqty;
         private System.Windows.Forms.TextBox Whiskypri;
-        private System.Windows.Forms.TextBox WIneqty;
         private System.Windows.Forms.TextBox WInepri;
-        private System.Windows.Forms.TextBox SodaQun;
-        private System.Windows.Forms.TextBox SodaPri;
         private System.Windows.Forms.Label BevCostLbl;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label foodCos;
@@ -1000,5 +978,15 @@
         private System.Windows.Forms.Label CustomerID;
         private System.Windows.Forms.ComboBox CustIDcb;
         private System.Windows.Forms.Label CustName;
+        private System.Windows.Forms.TextBox beerQty;
+        private System.Windows.Forms.TextBox juiceqty;
+        private System.Windows.Forms.TextBox Whiskyqty;
+        private System.Windows.Forms.TextBox WIneqty;
+        private System.Windows.Forms.TextBox SodaQun;
+        private System.Windows.Forms.TextBox beerPri;
+        private System.Windows.Forms.TextBox SodaPri;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
     }
 }

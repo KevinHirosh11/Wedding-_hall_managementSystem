@@ -16,5 +16,13 @@ namespace hall_system
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Booking bookingForm = new Booking();
+            bookingForm.FormClosed += (s, args) => this.Show();
+            bookingForm.Show();
+        }
     }
 }

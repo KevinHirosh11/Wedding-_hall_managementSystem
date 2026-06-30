@@ -25,91 +25,6 @@ namespace hall_system
             CustIDcb.DataSource = dt;
             Con.Close();
         }
-        private void Booking_Load(object sender, EventArgs e)
-        {
-            GetCustID();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox23_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label17_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -387,9 +302,111 @@ namespace hall_system
             }
             Con.Close();
         }
-        private void CustIDcb_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void CustIDcb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             fetchcusName();
+        }
+
+        private void Booking_Load(object sender, EventArgs e)
+        {
+            GetCustID();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (CustIDcb.SelectedValue == null || CustIDcb.Text == "")
+            {
+                MessageBox.Show("Please select a Customer ID");
+                return;
+            }
+            if (comboBox1.SelectedItem == null || comboBox1.Text == "")
+            {
+                MessageBox.Show("Please select Day or Night");
+                return;
+            }
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please enter number of persons");
+                return;
+            }
+
+            try
+            {
+                Con.Open();
+                string cusID = CustIDcb.SelectedValue.ToString();
+                string dayNight = comboBox1.SelectedItem.ToString();
+                string bookingDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                string persons = textBox1.Text;
+                string beverageCost = BevCostLbl.Text;
+                string foodCost = foodCos.Text;
+                string otherCharges = textBox23.Text == "" ? "0" : textBox23.Text;
+
+                string query = "insert into BookingTbl values('" + cusID + "','" + dayNight + "','" + bookingDate + "','" + persons + "','" + beverageCost + "','" + foodCost + "','" + otherCharges + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Booking Successfully Added");
+                Con.Close();
+                ClearForm();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+                Con.Close();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+        }
+
+        private void ClearForm()
+        {
+            CustIDcb.SelectedIndex = -1;
+            CustName.Text = "";
+            comboBox1.SelectedIndex = -1;
+            textBox1.Text = "";
+            dateTimePicker1.Value = DateTime.Now;
+            BevCostLbl.Text = "0";
+            foodCos.Text = "0";
+            textBox23.Text = "";
+            textBox24.Text = "";
+            textBox25.Text = "";
+
+            // Reset all checkboxes
+            SodaCheck.Checked = false;
+            checkBox1.Checked = false;
+            Winechk.Checked = false;
+            Whiskychk.Checked = false;
+            juicechk.Checked = false;
+            chickenchk.Checked = false;
+            fishchk.Checked = false;
+            sausagechk.Checked = false;
+            biryanichk.Checked = false;
+            mottonchk.Checked = false;
+
+            // Reset all textboxes
+            SodaPri.Text = "";
+            SodaQun.Text = "";
+            beerPri.Text = "";
+            beerQty.Text = "";
+            WInepri.Text = "";
+            WIneqty.Text = "";
+            Whiskypri.Text = "";
+            Whiskyqty.Text = "";
+            juicepri.Text = "";
+            juiceqty.Text = "";
+            chickenpri.Text = "";
+            chickenqty.Text = "";
+            fishpri.Text = "";
+            fishqty.Text = "";
+            sausagepri.Text = "";
+            sausageqty.Text = "";
+            biryanipri.Text = "";
+            biryaniqty.Text = "";
+            mottonpri.Text = "";
+            mottonqty.Text = "";
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace hall_system
+namespace WeddingHallTuto
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace hall_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new Form1());
         }
     }
 }

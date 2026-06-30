@@ -21,5 +21,20 @@ namespace hall_system
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "admin" && textBox2.Text == "1234")
+            {
+                this.Hide();
+                MainForm mainForm = new MainForm();
+                mainForm.FormClosed += (s, args) => this.Show();
+                mainForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password");
+            }
+        }
     }
 }

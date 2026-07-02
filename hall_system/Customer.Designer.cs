@@ -59,6 +59,7 @@
             this.label17.Size = new System.Drawing.Size(39, 36);
             this.label17.TabIndex = 11;
             this.label17.Text = "X";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // panel1
             // 
@@ -230,6 +231,7 @@
             this.button5.TabIndex = 51;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 

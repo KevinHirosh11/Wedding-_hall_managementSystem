@@ -27,7 +27,9 @@ namespace hall_system
         }
         private void label17_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
         }
 
         private void SodaCheck_CheckStateChanged(object sender, EventArgs e)
